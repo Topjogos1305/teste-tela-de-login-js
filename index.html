@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Realize o Login para Continuar</title>
+    <script type="text/javascript">
+        function login() {
+            // Obtém os valores do usuário e senha inseridos
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+            
+            // Verifica se o usuário e senha estão corretos
+            if (usuario === "usuario1234" && senha === "senha1234") {
+                alert("Login realizado com sucesso!");
+            } else {
+                alert("Usuário ou senha incorretos. Por favor, tente novamente.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Realize o Login para Continuar</h1>
+    <form>
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario"><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br>
+        <input type="button" value="Login" onclick="login()">
+    </form>
+</body>
+</html>
